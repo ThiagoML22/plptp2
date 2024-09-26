@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Carrito de Compras</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="brand">
+                <a href="../index.html"><span class="elite">ELITE</span><br><span class="suplementos">Suplementos</span></a>
+            </div>
+            
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="carrito.html">Carrito</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="carrito">
+            <h2>Carrito de Compras</h2>
+            <div id="cart-items">
+                <!-- Productos agregados al carrito aparecerán aquí -->
+            </div>
+            <button id="clear-cart">Vaciar Carrito</button>
+        </section>
+
+        <section id="comprar">
+            <h2>Formulario de Compra</h2>
+            <form id="purchase-form">
+                <div class="form-group">
+                    <label for="name">Nombre del cliente:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Dirección:</label>
+                    <input type="text" id="address" name="address" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Teléfono:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="payment">Medio de pago:</label>
+                    <select id="payment" name="payment" required>
+                        <option value="tarjeta">Tarjeta de Crédito</option>
+                        <option value="transferencia">Transferencia Bancaria</option>
+                        <option value="efectivo">Efectivo</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="product-list">Listado de productos:</label>
+                    <textarea id="product-list" name="product-list" readonly></textarea>
+                </div>
+                <button type="submit">Realizar Compra</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Elite Suplementos</p>
+    </footer>
+
+    <script src="../js/cart.js"></script>
+</body>
+</html>
